@@ -5,7 +5,6 @@ using namespace std;
 int main(int argc, char* argv[])
 {
     string input;
-    cout << argc << endl;
     if (argc == 2) {
         input = argv[argc - 1];
     }
