@@ -2,11 +2,17 @@
 #include <string>
 
 using namespace std;
-int main()
+int main(int argc, char* argv[])
 {
     string input;
+    cout << argc << endl;
+    if (argc == 2) {
+        input = argv[argc - 1];
+    }
+    else {
+        cin >> input;
+    }
     int decimal = 0;
-    cin >> input;
     input = input.substr(0, 8);
     int sum = 1;
     cout << "Convirtiendo a un numero de 8 bits...\n";
@@ -28,4 +34,8 @@ int main()
     cout << decimal << endl;
     cout << "\n\n\n\n\n\n\n";
     return 1;
+}
+
+void c() {
+    cout << "A" << endl;
 }
